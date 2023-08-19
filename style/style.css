@@ -1,0 +1,285 @@
+@import "font.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --grey: #6d6d6d;
+  --mont: "Montserrat";
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__title {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 4.5px;
+}
+
+.nav__link {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.intro {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.intro__title {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  margin-bottom: 20px;
+}
+
+.intro__text {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.intro__link {
+  color: var(--white);
+  font-family: var(--mont);
+  font-size: 18px;
+  font-weight: 500;
+  width: 200px;
+  height: 70px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 60px 0;
+  background: #fafafa;
+}
+.content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__title {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+.content__text {
+  color: var(--black);
+  font-family: var(--mont);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  max-width: 939px;
+  width: 100%;
+  word-wrap: break-word;
+}
+.content__link {
+  color: var(--black);
+  font-family: "HerrVonMuellerhoff";
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+}
+.item__title {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2.24px;
+}
+.item__text {
+  color: var(--black);
+  font-family: var(--mont);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  max-width: 289px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.content2__intro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 400px);
+}
+.item:nth-of-type(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.item:nth-of-type(2) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(4) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(5) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(6) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(7) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.item:nth-of-type(8) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+img {
+  vertical-align: middle;
+}
+
+.footer {
+  padding: 100px;
+  background: var(--black);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  color: var(--white);
+  font-family: var(--mont);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 4.5px;
+  margin-bottom: 20px;
+}
+
+.footer__text {
+  color: var(--grey);
+  font-family: var(--mont);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.footer__box img {
+  margin-bottom: 15px;
+}
+
+.footer__titles {
+  color: var(--white);
+  font-family: var(--mont);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer__name {
+  color: var(--white);
+  font-family: var(--mont);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__links {
+  display: flex;
+  gap: 10px;
+}
+
+form {
+  width: 350px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 0px 3px 3px 0px;
+  background: #505050;
+  color: var(--white);
+  font-family: var(--mont);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+}
+
+input {
+  color: var(--grey);
+  font-family: var(--mont);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px 0px 0px 3px;
+  background: var(--white);
+}
